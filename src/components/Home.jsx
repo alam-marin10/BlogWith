@@ -7,6 +7,11 @@ import italy from "../assets/picture/Italy card image.svg"
 import dubai from "../assets/picture/Dubai card image.svg"
 import patagonia from "../assets/picture/Patagonia Card Image.svg"
 import travelHero from "../assets/picture/travels background image.svg"
+import Norway from "../assets/picture/Norway.svg"
+import KyotoJapan from "../assets/picture/Kyoto-japan.svg"
+import TuscanyItaly from "../assets/picture/Tuscany-Italy.svg"
+import ZermattSwitzerland from "../assets/picture/Zermatt-Switzerland.svg"
+
 
 
 const Home = () => {
@@ -106,6 +111,8 @@ const Home = () => {
 
     </section>
 
+    {/** section 04 */}
+
     <section className="pb-10">
       
     <div className="relative w-full min-h-screen overflow-hidden flex items-center justify-center">
@@ -177,6 +184,55 @@ const Home = () => {
       </div>
 
       </div>
+
+    </section>
+
+    {/** section 05 */}
+
+    <section className="pb-10">
+      <div className="px-10 pt-10">
+        <span className="text-sm text-[#8A53FF] uppercase font-semibold">catch up to our posts</span>
+        <h1 style={{ fontFamily: "'Changa One', cursive" }} className=" text-4xl py-2 text-[#434343] font-bold">
+          Recent story entries
+        </h1>
+          
+         <div className="grid grid-cols-2 gap-4 px-10 py-6">
+          <div>
+            <img src={ZermattSwitzerland} alt="" className="rounded-md" />
+            <div className="flex text-left py-3">
+              <div className="space-y-2 px-4">
+              <h1 className="text-[#434343] font-bold text-md changa-font">Zermatt,Switzerland</h1>
+            <p className="text-[#576074]">
+            Marvel on the beauty of the iconic Matterhorn. Find the best places to stay that has the best views of this peak...
+            </p>
+
+              </div>
+              <div className="py-10 pr-6">
+                <MdSlowMotionVideo className="text-[#8A53FF] w-8 h-8" />
+              </div>
+            
+
+            </div>
+            
+          </div>
+          <div className="flex bg-[#F9F9F9]">
+            <div>
+              <img src={TuscanyItaly} alt="" className="rounded-md w-100" />
+            </div>
+            <div className="text-left px-2">
+              <h1 className="changa-font text-[#434343] text-2xl font-bold">Tuscany,Italy</h1>
+              <p className="text-[#576074]">
+              The amazing Tuscany is home to famous Renaissance art and architecture and
+               a vast scenic landscape. <span> view full blog...</span>
+              </p>
+            </div>
+
+          </div>
+          
+          </div>
+
+      </div>
+
 
     </section>
 
